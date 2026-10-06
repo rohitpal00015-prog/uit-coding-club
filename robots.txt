@@ -1,0 +1,29 @@
+# robots.txt for UIT Coding Club (UCC)
+# Optimized for Search Engines (Googlebot, Bingbot) and AI Engines (GPTBot, ClaudeBot, PerplexityBot)
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+
+# AI Crawlers & Answer Engines (AEO & GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://uit-coding-club.vercel.app/sitemap.xml
