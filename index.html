@@ -70,6 +70,7 @@
             "name": "Prof. (Dr.) Sanjay Srivastava",
             "jobTitle": "Principal",
             "affiliation": "United Institute of Technology, Prayagraj",
+            "image": "https://rohitpal00015-prog.github.io/assets/images/team/faculty_placeholder.png",
             "description": "Principal of United Institute of Technology & Chief Patron of UIT Coding Club"
           },
           {
@@ -77,6 +78,7 @@
             "name": "Dr. Abhishek Malviya",
             "jobTitle": "Dean Academics & HOD CSE",
             "affiliation": "United Institute of Technology, Prayagraj",
+            "image": "https://rohitpal00015-prog.github.io/assets/images/team/abhishek_malviya.jpg",
             "description": "Dean Academics & Head of Department, Computer Science & Engineering, United Institute of Technology"
           },
           {
@@ -84,6 +86,7 @@
             "name": "Dr. Manas Pandey",
             "jobTitle": "Dean Student Welfare",
             "affiliation": "United Institute of Technology, Prayagraj",
+            "image": "https://rohitpal00015-prog.github.io/assets/images/team/manas_pandey.jpg",
             "description": "Dean Student Welfare (DSW), United Institute of Technology, Prayagraj"
           },
           {
@@ -91,6 +94,7 @@
             "name": "Dr. Dhananjay Shukla",
             "jobTitle": "HOD Data Science & AIML",
             "affiliation": "United Institute of Technology, Prayagraj",
+            "image": "https://rohitpal00015-prog.github.io/assets/images/team/dhananjay_shukla.jpg",
             "description": "Head of Department, Data Science & AIML, United Institute of Technology, Prayagraj"
           },
           {
@@ -245,13 +249,13 @@
 <body>
 
   <!-- ========================================================================
-       TOP NAVIGATION BAR
+       TOP NAVIGATION BAR (RESPONSIVE WITH MOBILE DRAWER)
        ======================================================================== -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
       
       <!-- UCC Logo & Brand Identity -->
-      <a href="#" class="brand-anchor">
+      <a href="#" class="brand-anchor" aria-label="UIT Coding Club Home">
         <img src="assets/images/ucc_logo_transparent.png" alt="UIT Coding Club Logo" class="nav-logo-img" onerror="this.src='assets/images/ucc_logo.jpg'">
         <div class="brand-text-block">
           <div class="brand-title">
@@ -261,8 +265,8 @@
         </div>
       </a>
 
-      <!-- Minimal Navigation Menu -->
-      <nav>
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-desktop" aria-label="Desktop Navigation">
         <ul class="nav-menu-list">
           <li><a href="#about" class="nav-item-link">About</a></li>
           <li><a href="#leadership" class="nav-item-link">Leadership</a></li>
@@ -270,14 +274,40 @@
           <li><a href="#events" class="nav-item-link">Events</a></li>
           <li><a href="#resources" class="nav-item-link">Resources</a></li>
           <li>
-            <a href="mailto:ucc@uit.ac.in" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.88rem;">
+            <a href="mailto:ucc@uit.ac.in" class="btn btn-primary nav-contact-btn">
               Contact UCC
             </a>
           </li>
         </ul>
       </nav>
 
+      <!-- Mobile Hamburger Toggle Button -->
+      <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
     </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-circle-info"></i> About UCC</a></li>
+        <li><a href="#leadership" class="mobile-nav-link"><i class="fa-solid fa-user-tie"></i> Leadership &amp; Patrons</a></li>
+        <li><a href="#teams" class="mobile-nav-link"><i class="fa-solid fa-users-gear"></i> Student Core Team</a></li>
+        <li><a href="#events" class="mobile-nav-link"><i class="fa-solid fa-calendar-days"></i> Upcoming Events</a></li>
+        <li><a href="#resources" class="mobile-nav-link"><i class="fa-solid fa-book-bookmark"></i> Curated Resources</a></li>
+      </ul>
+      <div class="mobile-nav-action">
+        <a href="mailto:ucc@uit.ac.in" class="btn btn-primary" style="width: 100%; justify-content: center;">
+          <i class="fa-solid fa-envelope"></i> Contact UCC
+        </a>
+      </div>
+    </div>
+
+    <!-- Backdrop for Mobile Drawer -->
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
   </header>
 
   <main>
@@ -483,7 +513,7 @@
           <!-- Dean Academics & HOD CSE: Dr. Abhishek Malviya -->
           <div class="faculty-card" itemscope itemtype="https://schema.org/Person">
             <div class="faculty-avatar-wrap">
-              <img src="assets/images/team/faculty_placeholder.png" alt="Dr. Abhishek Malviya" class="faculty-avatar-img avatar-cse" itemprop="image">
+              <img src="assets/images/team/abhishek_malviya.jpg" alt="Dr. Abhishek Malviya" class="faculty-avatar-img avatar-cse" itemprop="image">
             </div>
             <span class="faculty-role-badge badge-dean" itemprop="jobTitle">Dean Academics &amp; HOD CSE</span>
             <h3 class="faculty-name" itemprop="name">Dr. Abhishek Malviya</h3>
@@ -495,7 +525,7 @@
           <!-- DSW: Dr. Manas Pandey -->
           <div class="faculty-card" itemscope itemtype="https://schema.org/Person">
             <div class="faculty-avatar-wrap">
-              <img src="assets/images/team/faculty_placeholder.png" alt="Dr. Manas Pandey" class="faculty-avatar-img avatar-dsw" itemprop="image">
+              <img src="assets/images/team/manas_pandey.jpg" alt="Dr. Manas Pandey" class="faculty-avatar-img avatar-dsw" itemprop="image">
             </div>
             <span class="faculty-role-badge badge-dsw" itemprop="jobTitle">Dean Student Welfare</span>
             <h3 class="faculty-name" itemprop="name">Dr. Manas Pandey</h3>
@@ -507,7 +537,7 @@
           <!-- HOD DS & AIML: Dr. Dhananjay Shukla -->
           <div class="faculty-card" itemscope itemtype="https://schema.org/Person">
             <div class="faculty-avatar-wrap">
-              <img src="assets/images/team/faculty_placeholder.png" alt="Dr. Dhananjay Shukla" class="faculty-avatar-img avatar-ds" itemprop="image">
+              <img src="assets/images/team/dhananjay_shukla.jpg" alt="Dr. Dhananjay Shukla" class="faculty-avatar-img avatar-ds" itemprop="image">
             </div>
             <span class="faculty-role-badge badge-hod" itemprop="jobTitle">HOD DS &amp; AIML</span>
             <h3 class="faculty-name" itemprop="name">Dr. Dhananjay Shukla</h3>
