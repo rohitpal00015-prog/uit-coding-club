@@ -26,4 +26,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://uit-coding-club.vercel.app/sitemap.xml
+Sitemap: https://rohitpal00015-prog.github.io/sitemap.xml
