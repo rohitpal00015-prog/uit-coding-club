@@ -815,6 +815,7 @@ body.nav-open {
 .avatar-pres { 
   border-color: var(--ucc-red) !important;
   box-shadow: 0 4px 16px var(--ucc-red-glow);
+  object-position: center 15%;
 }
 
 .avatar-vp { 
