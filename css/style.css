@@ -830,6 +830,12 @@ body.nav-open {
   object-position: center 15%;
 }
 
+.avatar-media { 
+  border-color: var(--ucc-red) !important;
+  box-shadow: 0 4px 16px var(--ucc-red-glow);
+  object-position: center 15%;
+}
+
 /* Generic Placeholder Avatar */
 .avatar-placeholder {
   width: 100%;
