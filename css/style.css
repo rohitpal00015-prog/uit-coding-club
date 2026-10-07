@@ -836,6 +836,12 @@ body.nav-open {
   object-position: center 15%;
 }
 
+.avatar-ops { 
+  border-color: var(--ucc-blue) !important;
+  box-shadow: 0 4px 16px var(--ucc-blue-glow);
+  object-position: center 15%;
+}
+
 /* Generic Placeholder Avatar */
 .avatar-placeholder {
   width: 100%;
