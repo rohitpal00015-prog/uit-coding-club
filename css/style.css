@@ -824,6 +824,12 @@ body.nav-open {
   object-position: center 15%;
 }
 
+.avatar-design { 
+  border-color: #9333ea !important;
+  box-shadow: 0 4px 16px rgba(147, 51, 234, 0.25);
+  object-position: center 15%;
+}
+
 /* Generic Placeholder Avatar */
 .avatar-placeholder {
   width: 100%;
