@@ -910,8 +910,11 @@ body.nav-open {
   font-size: 0.78rem;
   font-family: var(--font-mono);
   color: var(--ucc-blue);
-  margin-top: 6px;
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
 }
 
 .exec-email:hover {
@@ -921,24 +924,26 @@ body.nav-open {
 .exec-actions-wrap {
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  justify-content: center;
+  gap: 6px;
   margin-top: 8px;
-  flex-wrap: wrap;
 }
 
 .exec-linkedin-badge {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
   font-size: 0.74rem;
   font-weight: 700;
   color: #0a66c2;
   background-color: #f0f7ff;
   border: 1px solid #c7e0f8;
-  padding: 3px 9px;
+  padding: 4px 12px;
   border-radius: var(--radius-full);
+  margin-top: 2px;
   text-decoration: none;
   transition: var(--transition);
 }
