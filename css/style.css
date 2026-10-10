@@ -784,6 +784,7 @@ body.nav-open {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   transition: var(--transition);
   box-shadow: 0 2px 8px rgba(7, 36, 76, 0.03);
@@ -860,11 +861,13 @@ body.nav-open {
 
 .leader-role-tag {
   display: inline-block;
+  align-self: center;
+  width: fit-content;
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 3px 10px;
+  padding: 4px 14px;
   border-radius: var(--radius-full);
   margin-bottom: 8px;
 }
@@ -890,6 +893,7 @@ body.nav-open {
 }
 
 .exec-resp {
+  width: 100%;
   font-size: 0.84rem;
   color: var(--ucc-text-muted);
   line-height: 1.45;
@@ -911,6 +915,7 @@ body.nav-open {
 }
 
 .exec-actions-wrap {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
