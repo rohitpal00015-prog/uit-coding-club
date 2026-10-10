@@ -1,29 +1,16 @@
-# robots.txt for UIT Coding Club (UCC)
-# Optimized for Search Engines (Googlebot, Bingbot) and AI Engines (GPTBot, ClaudeBot, PerplexityBot)
-
+# Robots.txt for UIT Coding Club (UCC)
 User-agent: *
 Allow: /
 Allow: /assets/
-Allow: /css/
-Allow: /js/
-
-# AI Crawlers & Answer Engines (AEO & GEO)
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Applebot
-Allow: /
+Allow: /assets/images/
+Allow: /assets/images/team/
 
 User-agent: Googlebot
 Allow: /
+Allow: /assets/images/team/
 
-User-agent: Google-Extended
+User-agent: Googlebot-Image
 Allow: /
+Allow: /assets/images/team/
 
 Sitemap: https://rohitpal00015-prog.github.io/sitemap.xml

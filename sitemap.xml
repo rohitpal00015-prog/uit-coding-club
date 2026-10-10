@@ -1,42 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://rohitpal00015-prog.github.io/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://rohitpal00015-prog.github.io/#about</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rohitpal00015-prog.github.io/#leadership</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://rohitpal00015-prog.github.io/#teams</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://rohitpal00015-prog.github.io/#events</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rohitpal00015-prog.github.io/#resources</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    
+    <!-- Image Metadata for Gautam Kumar Maurya -->
+    <image:image>
+      <image:loc>https://rohitpal00015-prog.github.io/assets/images/team/gautam_avatar.png</image:loc>
+      <image:title>Gautam Kumar Maurya - President of UIT Coding Club (UCC), United Institute of Technology, Prayagraj</image:title>
+      <image:caption>Official portrait photo of Gautam Kumar Maurya, President of UIT Coding Club (UCC) at United Institute of Technology, Prayagraj.</image:caption>
+    </image:image>
+
+    <!-- Image Metadata for Rohit Pal -->
+    <image:image>
+      <image:loc>https://rohitpal00015-prog.github.io/assets/images/team/rohit_avatar.png</image:loc>
+      <image:title>Rohit Pal - Social Media Head of UIT Coding Club (UCC), United Institute of Technology, Prayagraj</image:title>
+      <image:caption>Official portrait photo of Rohit Pal, Social Media Head of UIT Coding Club (UCC) at United Institute of Technology, Prayagraj.</image:caption>
+    </image:image>
+
+    <!-- Image Metadata for Praveen Singh -->
+    <image:image>
+      <image:loc>https://rohitpal00015-prog.github.io/assets/images/team/praveen_avatar.png</image:loc>
+      <image:title>Praveen Singh - Design Lead of UIT Coding Club (UCC), United Institute of Technology, Prayagraj</image:title>
+      <image:caption>Official portrait photo of Praveen Singh, Design Lead of UIT Coding Club (UCC) at United Institute of Technology, Prayagraj.</image:caption>
+    </image:image>
+
+    <!-- Image Metadata for Ansh Kumar Gupta -->
+    <image:image>
+      <image:loc>https://rohitpal00015-prog.github.io/assets/images/team/ansh_avatar.png</image:loc>
+      <image:title>Ansh Kumar Gupta - Vice President of UIT Coding Club (UCC), United Institute of Technology, Prayagraj</image:title>
+      <image:caption>Official portrait photo of Ansh Kumar Gupta, Vice President of UIT Coding Club (UCC) at United Institute of Technology, Prayagraj.</image:caption>
+    </image:image>
+
+    <!-- Image Metadata for Rahul Kushwaha -->
+    <image:image>
+      <image:loc>https://rohitpal00015-prog.github.io/assets/images/team/rahul_avatar.png</image:loc>
+      <image:title>Rahul Kushwaha - Event &amp; Logistics Head of UIT Coding Club (UCC), United Institute of Technology, Prayagraj</image:title>
+      <image:caption>Official portrait photo of Rahul Kushwaha, Event &amp; Logistics Head of UIT Coding Club (UCC) at United Institute of Technology, Prayagraj.</image:caption>
+    </image:image>
+
+    <!-- Image Metadata for UCC Official Logo -->
+    <image:image>
+      <image:loc>https://rohitpal00015-prog.github.io/assets/images/ucc_logo_transparent.png</image:loc>
+      <image:title>UIT Coding Club (UCC) Official Insignia Logo</image:title>
+      <image:caption>Official Insignia Logo of UIT Coding Club at United Institute of Technology, Prayagraj.</image:caption>
+    </image:image>
   </url>
 </urlset>
