@@ -110,6 +110,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  window.addEventListener('scroll', handleScroll, { passive: true });
-  handleScroll();
+  // Scroll progress indicator (Minimal red-to-blue gradient accent)
+  const progressBar = document.createElement('div');
+  progressBar.className = 'scroll-progress-bar';
+  progressBar.setAttribute('aria-hidden', 'true');
+  document.body.prepend(progressBar);
+
+  const updateProgressBar = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (scrollHeight > 0) {
+      const progress = (scrollTop / scrollHeight) * 100;
+      progressBar.style.width = `${progress}%`;
+    }
+  };
+
+  window.addEventListener('scroll', updateProgressBar, { passive: true });
+  updateProgressBar();
+
+  // Minimal IntersectionObserver for scroll reveals
+  if ('IntersectionObserver' in window) {
+    const revealTargets = document.querySelectorAll(
+      '.section-header, .about-triptych, .pillars-row, .faculty-card, .exec-profile-card, .tech-part-column, .volunteers-grid-flow, .resources-grid, .coming-soon-card'
+    );
+
+    revealTargets.forEach(el => {
+      el.classList.add('reveal-on-scroll');
+    });
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealTargets.forEach(el => revealObserver.observe(el));
+  }
 });
